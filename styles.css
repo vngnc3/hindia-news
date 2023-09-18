@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+:root {
+  --scroll-speed: 17s;
+  --positive-color: #03e610;
+  --negative-color: #fe0000;
+  --size: 5rem;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Archivo", sans-serif;
+  color: unset;
+  overflow: hidden;
+  user-select: none;
+}
+
+#ticker {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size);
+  font-size: var(--size);
+  letter-spacing: 0.1rem;
+  transition: all 1s ease-in-out;
+  /* background-color: #44991032; */
+}
+
+.ticker-inner {
+  display: inline-block;
+  white-space: nowrap;
+  display: flex;
+  gap: 4rem;
+  transform: translateX(100%);
+  /* border: 1px solid orangered; */
+}
+
+@keyframes blink-random {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
