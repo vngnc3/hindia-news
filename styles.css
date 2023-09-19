@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
   --scroll-speed: 17s;
   --positive-color: #03e610;
   --negative-color: #fe0000;
-  --size: 5rem;
+  --size: 2rem;
 }
 
 body,
@@ -12,7 +13,8 @@ html {
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: "Archivo", sans-serif;
+  /* font-family: "Archivo", sans-serif; */
+  font-family: 'VT323', monospace;
   color: unset;
   overflow: hidden;
   user-select: none;
@@ -26,7 +28,7 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--size);
+  gap: var(--size/2);
   font-size: var(--size);
   letter-spacing: 0.1rem;
   transition: all 1s ease-in-out;
