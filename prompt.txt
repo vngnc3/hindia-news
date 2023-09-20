@@ -1,0 +1,5 @@
+I need thirty-two news headlines regarding Blue Valley to be released ASAP. These thirty-two news headlines need to cover all important aspects surrounding Blue Valley (finance, oligarch, socio-politics, technology, and climate change). Each of these headlines shall have its sentiment embedded along with it, therefore, always write each headlines in a javascript object like so:
+
+{ headline: "First COVID-19 death recorded in Blue Valley since 2021.", isPositive: false }
+
+Since we will be handing out multiple news headlines and its sentiment value, put them all in a JS array so we can deliver it ASAP to our online media providers.
